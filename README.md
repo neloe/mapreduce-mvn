@@ -4,7 +4,7 @@ Core source from <https://github.com/bandiajay/MapReduce>; this project builds t
 
 ## Prerequisites
 
-Clone or download this repository
+Clone or download this repository.
 
 ### Install Maven
 
@@ -20,7 +20,7 @@ This version of the sample MapReduce demo uses Hadoop 3.2.2, so you need to use 
 For the purposes of this document, I will assume that you are putting the required files in `C:\hadoop\bin`.  You may choose another directory, but the parent directory name of these files MUST be `bin`.
 
 * Download `winutils.exe` and `hadoop.dll` and place them in `C:\hadoop\bin`
-* To your _System_ environment variables, add a new variable named `Hadoop_Home` with the value `C:\hadoop`.  If you are unsure how to change environment variables on your version of Windows, use the search engine of your choice to find instructions.
+* To your _System_ environment variables, add a new variable named `Hadoop_Home` with the value `C:\hadoop`.  If you are unsure how to change environment variables on your version of Windows, use the search engine of your choice to find instructions
 * Add `C:\hadoop\bin` to your System `PATH` environment variable
 
 ## Running the Map Reducer
