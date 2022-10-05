@@ -1,5 +1,7 @@
 package com.mycompany.app;
 
+import java.io.File;
+
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
@@ -41,6 +43,16 @@ public class ViewCount extends Configured implements Tool {
     }
 
     public static void main(String[] args) throws Exception{
+
+        File outputDir = new File(args[1]);
+
+        if (outputDir.exists()) {
+            for (File file : outputDir.listFiles()) {
+                file.delete();
+              }
+            outputDir.delete();
+        }
+
         int exitCode = ToolRunner.run(new ViewCount(), args);
         System.exit(exitCode);
     }
