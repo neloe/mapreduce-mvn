@@ -4,11 +4,11 @@ Core source from <https://github.com/bandiajay/MapReduce>; this project builds t
 
 ## Prerequisites
 
-Clone or download this repository
+Clone or download this repository.
 
 ### Install Maven
 
-You can [download](https://maven.apache.org/download.cgi) install maven (a Java build system) using [their instructions](https://maven.apache.org/install.html).
+You can [download](https://maven.apache.org/download.cgi)  and install maven (a Java build system) using [their instructions](https://maven.apache.org/install.html).
 On Windows I found it easiest to use [Chocolatey](https://chocolatey.org/) because I'm lazy.
 
 _Note_: If your package manager has maven 3.6.3 as the latest version, you cannot use Java 17.  Only the latest release of maven (3.8.6 at the time of writing this) supports OpenJDK 17.
@@ -20,7 +20,7 @@ This version of the sample MapReduce demo uses Hadoop 3.2.2, so you need to use 
 For the purposes of this document, I will assume that you are putting the required files in `C:\hadoop\bin`.  You may choose another directory, but the parent directory name of these files MUST be `bin`.
 
 * Download `winutils.exe` and `hadoop.dll` and place them in `C:\hadoop\bin`
-* To your _System_ environment variables, add a new variable named `Hadoop_Home` with the value `C:\hadoop`.  If you are unsure how to change environment variables on your version of Windows, use the search engine of your choice to find instructions.
+* To your _System_ environment variables, add a new variable named `Hadoop_Home` with the value `C:\hadoop`.  If you are unsure how to change environment variables on your version of Windows, use the search engine of your choice to find instructions
 * Add `C:\hadoop\bin` to your System `PATH` environment variable
 
 ## Running the Map Reducer
